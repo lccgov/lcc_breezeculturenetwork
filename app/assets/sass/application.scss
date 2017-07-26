@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
 
 // available variables to change the brand colours as required
 // masterhead.scss
@@ -47,9 +48,9 @@ $section-Background:#ECF0F1 ;
 //$side-nav-active-background:#133E8D ;
 
 //  carousel.scss
-$carousel-active-background:#E67E22;
+$carousel-active-background:rgba(#E67E22, 08);
 //$carousel-indicators-active-background:#ccc ;
-$carousel-caption-background: #E67E22 ;
+$carousel-caption-background: rgba(#E67E22, 0.8) ;
 //$carousel-caption-font-color:#fff ;
 
 
@@ -359,5 +360,25 @@ HTML STYLES
 }
 
 /*END*/
+
+
+.contentLink li div {
+    position:relative;
+    padding-bottom: 100px;
+
+    a.btn{
+        position:absolute;
+        bottom:30px;
+        left:30px;
+        right:30px;
+        width:auto;
+    }
+
+    &:after{
+        content:'';
+        height:80px;
+        display:block;
+    }
+}
 
 
