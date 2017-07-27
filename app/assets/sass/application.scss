@@ -214,9 +214,9 @@ hr.light {
 
 
  .header-right{
-    background:url(../images/logo-2.png) center right no-repeat;
-    margin-top: 65px;
-    margin-bottom: 0px;
+    background:url(../images/logo-2.png) center  right 20px no-repeat;
+    margin:65px 0px 0 0;
+    padding:0 20px 0 0;
     height:70px;
 
        @media (max-width: 767px){
