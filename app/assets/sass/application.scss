@@ -18,7 +18,7 @@ $base-font-size:15px ;
 //$base-font-color:#333 ;
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
-$btn-background-color:#3498DB ;
+$btn-background-color:#2F7CAF ;
 $font-primary: 'Open Sans', Arial ; // main font
 $font-secondary: 'Open Sans', Arial  ; // secondary font
 
@@ -31,7 +31,7 @@ $font-secondary: 'Open Sans', Arial  ; // secondary font
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:#3498DB ;
+$main-nav-background:#2F7CAF ;
 //$main-nav-link:#fff ;
 
 //footer.scss
@@ -48,10 +48,12 @@ $section-Background:#ECF0F1 ;
 //$side-nav-active-background:#133E8D ;
 
 //  carousel.scss
-$carousel-active-background:rgba(#E67E22, 08);
+$carousel-active-background:rgba(#2f7caf, 08);
 //$carousel-indicators-active-background:#ccc ;
-$carousel-caption-background: rgba(#E67E22, 0.8) ;
+$carousel-caption-background: rgba(#2f7caf, 0.8) ;
 //$carousel-caption-font-color:#fff ;
+// $carousel-active-background:rgba(#E67E22, 08);
+// $carousel-caption-background: rgba(#E67E22, 0.8) ;
 
 
 // blocklinks.scss
@@ -81,7 +83,7 @@ $carousel-caption-background: rgba(#E67E22, 0.8) ;
 //$base-secondary-color:#fff; // alternative background color
 //$font-primary-color: #1E2A34; // font color
 //$font-secondary-color: #ffffff; // alternative font color
-$button-primary-color: #3498DB;  // main button color
+$button-primary-color: #2F7CAF;  // main button color
 //$link-primary-color: #006da5;  // main link color
 //$link-primary-font-color: #fff;  // main button font color
 //$base-highlight-color:#1E2A34; // highlight olor
@@ -114,12 +116,12 @@ $sectionFive-background-color:#fff;
 //$heroFontcolor:#fff; 
 
 //news
-$news-button-background: #3498DB ;
+$news-button-background: #2F7CAF ;
 $news-pod-back:#fff ;
 $news-pod-border-color:#ECF0F1;
 
 //accordion
-$accordion-color:#3498DB;
+$accordion-color:#2F7CAF;
 $accordion-border-color:#ECF0F1;
 
 @import 'mixins';
@@ -153,7 +155,7 @@ $accordion-border-color:#ECF0F1;
 
 h1, h2, h2.ms-rteElement-H2 {
 
-	color:#3498DB;
+	color:#2F7CAF;
     padding:0px;
 }
 
@@ -237,7 +239,9 @@ hr.light {
    }
  } 
 
-  
+    .pull-right .ms-helperText, input.ms-helperText {
+        color:#6B6B6B;
+    }
  
 
 
@@ -289,17 +293,17 @@ hr.light {
 
 
 footer.main {
-    background:#3498DB;
+    background:#2F7CAF;
     position:relative;
 
     .footer {
-    background: #3498DB;
+    background: #2F7CAF;
        }
 
 
 .footerGlobal
 {   
-background:darken(#3498DB, 5%);
+background:darken(#2F7CAF, 5%);
 
 
 }
@@ -385,3 +389,26 @@ HTML STYLES
     display:none;
 }
 
+//high contrast focus styling
+
+.main-nav ul li a:focus {
+    background: #fbc02d !important;
+    color: #263238 !important;
+}
+
+a:not(.logo, .cd-top, .navbar-brand):focus {
+    border: 0 !important;
+    box-shadow: 0 3px 0 #fbc02d !important;
+    background: #fbc02d !important;
+    color: #263238 !important;
+}
+
+a.logo:focus, a.navbar-brand:focus {
+    background-color: #fbc02d !important;
+}
+
+.ms-srch-sb>input:focus, input[type="text"]:focus {
+    -webkit-box-shadow: 0 0 0 4px #FFBF47 !important;
+    -moz-box-shadow: 0 0 0 4px #FFBF47 !important;
+    box-shadow: 0 0 0 4px #FFBF47 !important;
+}
