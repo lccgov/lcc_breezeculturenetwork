@@ -253,7 +253,11 @@ hr.light {
         margin:0 0 20px 0;
 
 	li{
-		margin-right:5px;
+        margin-right:5px;
+        
+        &:focus-within>ul {
+            display:block;
+        }
 	}	
 
     a{
@@ -411,4 +415,19 @@ a.logo:focus, a.navbar-brand:focus {
     -webkit-box-shadow: 0 0 0 4px #FFBF47 !important;
     -moz-box-shadow: 0 0 0 4px #FFBF47 !important;
     box-shadow: 0 0 0 4px #FFBF47 !important;
+}
+
+//Screen reader only 
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
 }
